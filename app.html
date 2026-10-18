@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MT Group TSP 6th BN Mdu - Duty Deployment</title>
 <script>
-var APP_VER=2610182100;
+var APP_VER=2610182200;
 (function(){try{
   var o=localStorage.getItem('duty_ota');
   if(o&&!window.__ota){
@@ -216,6 +216,9 @@ html,body{max-width:100%;overflow-x:hidden}
 section,#p1,#p2,.hd,.hero,.hr1,.hr2,.hr3,.hr4,.vo2,.vw,.clrday{max-width:100%;min-width:0;box-sizing:border-box}
 .hero{overflow:hidden}.chips{max-width:100%}.chips span{font-size:9.5px;padding:2px 8px;white-space:normal}
 input[type=date],#cdt,#idt{max-width:100%;min-width:0;width:auto}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;width:100%}
+#p1>*{max-width:100%}
+.hd{width:100%!important;margin-left:0;margin-right:0}
 .htitle .t1{white-space:normal;word-break:break-word}
 }.ovw{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}.ovl{display:flex;flex-direction:column;gap:7px;font-size:13px}.ovl i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}.ovf{width:100%;max-width:340px;height:auto;margin-top:6px}.ovf text{font:700 12px system-ui,sans-serif;fill:var(--tx)}.ovf .sub{font-size:10px;font-weight:500;fill:var(--mu)}</style></head><body>
 <div class="wrap">
@@ -1230,7 +1233,7 @@ async function exportPdf(){
   await saveFile(fname('pdf'),doc.output('arraybuffer'));
 }
 /* ---------- palette ---------- */
-var APPV='20261018-2100',UPDATE_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/duty-app-mt/main/app.html';
+var APPV='20261018-2200',UPDATE_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/duty-app-mt/main/app.html';
 function reloadApp(){if(isNative())location.href=new URL('index.html',location.href).href;else location.reload()}
 async function updateApp(){
   if(!isNative()){alert('Idhu APK app-la mattum velai seiyum. Web link-la eppavume latest dhaan.');return}
